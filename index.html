@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,21 +27,21 @@
 
       <div class="city-date">
         <div class="city"><h2>Durban 🇿🇦</h2></div>
-        <div class="date">22 October 2024</div>
+        <div class="date" id="ZA-date">22 October 2024</div>
       </div>
-      <span class="time">12:15:45</span>
+      <span class="time" id="ZA-time">12:15:45</span>
 
       <div class="city-date">
         <div class="city"><h2>Lagos 🇳🇬</h2></div>
-        <div class="date">22 October 2024</div>
+        <div class="date" id="NG-date">22 October 2024</div>
       </div>
-      <span class="time">12:15:45</span>
+      <span class="time" id="NG-time">12:15:45</span>
 
       <div class="city-date">
         <div class="city"><h2>Nairobi 🇰🇪</h2></div>
-        <div class="date">22 October 2024</div>
+        <div class="date" id="KE-date">22 October 2024</div>
       </div>
-      <span class="time">12:15:45</span>
+      <span class="time" id="KE-time">12:15:45</span>
     </div>
     <footer>
       This project was coded by Noncedo Mchunu and is
@@ -48,4 +50,5 @@
       >
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
