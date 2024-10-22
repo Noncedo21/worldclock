@@ -14,7 +14,7 @@ body {
   font-weight: 700;
   font-style: normal;
   border-radius: 40px;
-
+  color: #085f63;
   box-shadow: 5px 5px 5px rgb(150, 209, 243);
 }
 footer {
@@ -24,4 +24,26 @@ footer {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #b7f8db;
+}
+
+.city-select {
+  display: block;
+  width: 600px;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 30px;
+}
+h1 {
+  text-align: center;
+}
+.city-date {
+  border-bottom: 1px dashed blue;
+}
+.time {
+  display: flex;
+  position: relative;
+  top: -50px;
+  left: 500px;
+  font-size: 28px;
 }
