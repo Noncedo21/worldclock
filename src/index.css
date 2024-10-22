@@ -1,10 +1,27 @@
 body {
-  background: #f0fbff;
+  background: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
 }
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
-  background: #e6f7f1;
-  margin: 30px;
-  padding: 60px;
+  background: #e0f7fa;
+  margin: 60px;
+  padding: 30px;
+  display: block;
+  position: relative;
+  left: 400px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 40px;
+
+  box-shadow: 5px 5px 5px rgb(150, 209, 243);
+}
+footer {
+  display: block;
+  position: relative;
+  left: 500px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
