@@ -1,6 +1,7 @@
 let dbnDate = moment().format("MMMM Do YYYY");
-let currentDdate = document.querySelector("#ZA-date");
-let dbnTime = moment().tz("Africa/Johannesburg");
-let formattedDbnTime = moment(dbnTime).format("HH:mm:ss");
+let currentDate = document.querySelector("#ZA-date");
+currentDate.innerHTML = dbnDate; // Add this to update the date in the DOM
+
+let dbnTime = moment().tz("Africa/Johannesburg").format("HH:mm:ss");
 let currentDbn = document.querySelector("#ZA-time");
-currentDbn.innerHTML = formattedDbnTime;
+currentDbn.innerHTML = dbnTime; // This will update the time correctly
