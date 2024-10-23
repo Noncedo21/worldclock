@@ -52,6 +52,10 @@ function selectCity(event) {
     cityTime = moment().tz("Europe/Moscow").format("HH:mm:ss");
     cityDate = moment().tz("Europe/Moscow").format("MMMM Do YYYY");
     cityName = "Moscow 🇷🇺";
+  } else if (city === "current") {
+    cityTime = moment().format("HH:mm:ss");
+    cityDate = moment().format("MMMM Do YYYY");
+    cityName = "Current Location 🌍";
   }
 
   // Replace all cities on the page with the selected city info
