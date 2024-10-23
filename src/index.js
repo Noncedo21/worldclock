@@ -28,3 +28,22 @@ function showNairobi() {
   currentNai.innerHTML = NaiTime; // This will update the Kenyan time
 }
 setInterval(showNairobi, 1000);
+
+let citySelect = document.querySelector("city-select");
+let londonTime = moment().tz("Europe/London").format("HH:mm:ss");
+let chicagoTime = moment().tz("America/Chicago").format("HH:mm:ss");
+let moscowTime = moment().tz("Europe/MMoscow").format("HH:mm:ss");
+
+let londonDate = moment().format("MMMM Do YYYY");
+let chicagoDate = moment().format("MMMM Do YYYY");
+let moscowDate = moment().format("MMMM Do YYYY");
+
+let cities = document.querySelector("city-container");
+
+function selectCity(event) {
+  if (event.target.value === "london") {
+    cities.innerHTML = `It is ${londonDate} ${londonTime} in London`;
+  }
+}
+
+citySelect.addEventListener("change", selectCity);
