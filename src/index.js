@@ -66,9 +66,11 @@ function selectCity(event) {
         <div class="date">${cityDate}</div>
       </div>
       <span class="time">${cityTime}</span>
+      <a href="index.html" target="_blank">All cities</a>
     `;
   }
 }
 
 // Add event listener to the city select element
 citySelect.addEventListener("change", selectCity);
+setInterval(selectCity, 1000);
